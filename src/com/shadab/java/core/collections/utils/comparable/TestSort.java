@@ -1,7 +1,7 @@
 package com.shadab.java.core.collections.utils.comparable;
 import java.util.*;  
 import java.io.*;  
-public class TestSort{  
+public class TestSort {  
 public static void main(String args[]){  
 ArrayList<Student> al=new ArrayList<Student>();  
 al.add(new Student(101,"Vijay",23));  

@@ -1,4 +1,4 @@
-package co.shadab.java.core.collections.set;
+package com.shadab.java.core.collections.set;
 import java.util.HashSet;
  
 class Dog{

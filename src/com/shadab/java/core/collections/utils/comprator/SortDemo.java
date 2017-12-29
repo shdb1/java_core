@@ -1,4 +1,8 @@
 package com.shadab.java.core.collections.utils.comprator;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class SortDemo
 {
     public static void main (String[] args)
@@ -18,7 +22,7 @@ public class SortDemo
         for (int i=0; i<ar.size(); i++)
             System.out.println(ar.get(i));
  
-        Collections.sort(ar, new Sortbyname());
+        Collections.sort(ar, new SortByName());
  
         System.out.println("\nSorted by name");
         for (int i=0; i<ar.size(); i++)

@@ -1,4 +1,4 @@
-package com.shadab.java.core.exceptions;
+package com.shadab.java.core.exception;
 
 public class Demo {
 

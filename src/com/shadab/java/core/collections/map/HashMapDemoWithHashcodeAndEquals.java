@@ -1,4 +1,4 @@
-package com.shadab.core.java.collections.map;
+package com.shadab.java.core.collections.map;
 
 import java.util.HashMap;
 

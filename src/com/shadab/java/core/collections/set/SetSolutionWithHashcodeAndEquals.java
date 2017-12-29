@@ -1,20 +1,21 @@
 package com.shadab.java.core.collections.set;
 import java.util.HashSet;
  
-class Dog{
+class Cat{
 	String color;
  
-	public Dog(String s){
+	public Cat(String s){
 		color = s;
 	}
  
 	//overridden method, has to be exactly the same like the following
 	public boolean equals(Object obj) {
-		if (!(obj instanceof Dog))
+		if (!(obj instanceof Cat))
 			return false;	
 		if (obj == this)
 			return true;
-		return this.color.equals(((Dog) obj).color);
+			
+		return this.color.equals(((Cat) obj).color);
 	}
  
 	public int hashCode(){
@@ -24,16 +25,16 @@ class Dog{
  
 public class SetSolutionWithHashcodeAndEquals {
 	public static void main(String[] args) {
-		HashSet<Dog> dogSet = new HashSet<Dog>();
-		dogSet.add(new Dog("white"));
-		dogSet.add(new Dog("white"));
+		HashSet<Cat> CatSet = new HashSet<Cat>();
+		CatSet.add(new Cat("white"));
+		CatSet.add(new Cat("white"));
  
-		System.out.println("We have " + dogSet.size() + " white dogs!");
+		System.out.println("We have " + CatSet.size() + " white Cats!");
  
-		if(dogSet.contains(new Dog("white"))){
-			System.out.println("We have a white dog!");
+		if(CatSet.contains(new Cat("white"))){
+			System.out.println("We have a white Cat!");
 		}else{
-			System.out.println("No white dog!");
+			System.out.println("No white Cat!");
 		}	
 	}
 }
