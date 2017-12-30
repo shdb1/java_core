@@ -13,9 +13,9 @@ import java.sql.SQLException;
 public class JdbcDelete {
 
 	public static void main(String[] args) {
-		String dbURL = "jdbc:oracle:thin:@localhost:1521:orcl";
-		String username = "root";
-		String password = "secret";
+		String dbURL = "jdbc:oracle:thin:@127.0.0.1:1521:MYORCLDB";
+		String username = "System";
+		String password = "orclSecure123";
 		
 		try (Connection conn = DriverManager.getConnection(dbURL, username, password)) {
 			

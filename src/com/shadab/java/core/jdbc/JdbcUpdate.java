@@ -13,13 +13,13 @@ import java.sql.SQLException;
 public class JdbcUpdate {
 
 	public static void main(String[] args) {
-		String dbURL = "jdbc:oracle:thin:@localhost:1521:orcl";
-		String username = "root";
-		String password = "secret";
+		String dbURL = "jdbc:oracle:thin:@127.0.0.1:1521:MYORCLDB";
+		String username = "System";
+		String password = "orclSecure123";
 
 		try (Connection conn = DriverManager.getConnection(dbURL, username, password)) {
 
-			String sql = "UPDATE coumputer SET computername=?, computermodel=?, computerprice=? WHERE computername=?";
+			String sql = "UPDATE computer SET computername=?, computermodel=?, computerprice=? WHERE computername=?";
 
 			PreparedStatement statement = conn.prepareStatement(sql);
 			statement.setString(1, "dell");

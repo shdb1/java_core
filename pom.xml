@@ -3,6 +3,14 @@
   <groupId>java_core</groupId>
   <artifactId>java_core</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+   <!-- https://mvnrepository.com/artifact/com.oracle/ojdbc14 -->
+<!-- <dependency>
+    <groupId>com.oracle</groupId>
+    <artifactId>ojdbc14</artifactId>
+    <version>10.2.0.4.0</version>
+</dependency> -->
+  </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
