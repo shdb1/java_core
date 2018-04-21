@@ -20,7 +20,7 @@ class MyRunnableThread implements Runnable{
         }
     } 
 }
-public class RunMyThread {
+  class RunMyThread {
     public static void main(String a[]){
         System.out.println("Starting Main Thread...");
         MyRunnableThread mrt = new MyRunnableThread();

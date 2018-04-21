@@ -2,7 +2,7 @@ package com.shadab.java.core.threads;
 /**
  * @author Mohammad Shadab
  */
-class First
+class FirstClass
 {
  public void display(String msg)
  {
@@ -19,11 +19,11 @@ class First
  }
 }
 
-class Second extends Thread
+class SecondClass extends Thread
 {
  String msg;
- First fobj;
- Second (First fp,String str)
+ FirstClass fobj;
+ SecondClass (FirstClass fp,String str)
  {
   fobj = fp;
   msg = str;
@@ -39,9 +39,9 @@ public class NoSyncDemo
 {
  public static void main (String[] args)
  {
-  First fnew = new First();
-  Second ss = new Second(fnew, "welcome");
-  Second ss1= new Second (fnew,"new");
-  Second ss2 = new Second(fnew, "programmer");
+	 FirstClass fnew = new FirstClass();
+  SecondClass ss = new SecondClass(fnew, "welcome");
+  SecondClass ss1= new SecondClass (fnew,"new");
+  SecondClass ss2 = new SecondClass(fnew, "programmer");
  }
 }

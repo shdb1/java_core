@@ -15,7 +15,7 @@ class MySmpThread extends Thread{
         }
     }
 }
-public class RunThread {
+  class RunThread {
     public static void main(String a[]){
         System.out.println("Starting Main Thread...");
         MySmpThread mst = new MySmpThread();
