@@ -3,6 +3,9 @@
   <groupId>java_core</groupId>
   <artifactId>java_core</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <properties>
+    <javaassist.version>3.21.0-GA</javaassist.version>
+</properties>
   <dependencies>
    <!-- https://mvnrepository.com/artifact/com.oracle/ojdbc14 -->
 <!-- <dependency>
@@ -10,6 +13,14 @@
     <artifactId>ojdbc14</artifactId>
     <version>10.2.0.4.0</version>
 </dependency> -->
+
+<dependency>
+    <groupId>org.javassist</groupId>
+    <artifactId>javassist</artifactId>
+    <version>${javaassist.version}</version>
+</dependency>
+ 
+
   </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>
