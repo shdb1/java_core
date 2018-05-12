@@ -4,7 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CloningTest {
-
+	
+/*	http://javaconceptoftheday.com/difference-between-shallow-copy-vs-deep-copy-in-java/
+*/
 	public static void main(String[] args) throws CloneNotSupportedException {
 
 		Employee emp = new Employee();
