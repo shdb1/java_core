@@ -11,6 +11,7 @@ public class CloningTest {
 */
 	public static void main(String[] args) throws CloneNotSupportedException {
 
+		
 		Employee emp = new Employee();
 
 		emp.setId(1);
