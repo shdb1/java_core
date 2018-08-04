@@ -12,6 +12,7 @@ this is why we need a reference queue to work with this type of references.
 2. The Garbage Collector adds a phantom reference to a
 reference queue after the finalize method of its referent is
 executed. It implies that the instance is still in the memory.
+3.After GC Also they remains in memory so they are kind of ghosts .
 */
 public class PhantomReferenceTest {
 
