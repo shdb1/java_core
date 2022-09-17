@@ -21,6 +21,7 @@ public class StreamApiForEachTest {
 
 	 
 				listOfNames.stream().forEach(name->System.out.println(name));
+				listOfNames.stream().forEach(name->System.out.printf(name+"_updated"));
  
 
 
